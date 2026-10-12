@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Mini Project | Calculator + Operator Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="brand-icon" aria-hidden="true">&lt;/&gt;</div>
+      <div class="hero-copy">
+        <h1>Plabon's <span>Calculator</span></h1>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <section class="panel calculator-panel">
+        <div class="section-heading">
+          <div class="section-icon calculator-icon" aria-hidden="true">▦</div>
+          <div>
+            <h2>Calculator</h2>
+            
+          </div>
+        </div>
+
+        <div class="display" aria-live="polite">
+          <div class="expression" id="expression"></div>
+          <output id="display">0</output>
+        </div>
+
+        <div class="keys" id="keys">
+          <button class="number" data-value="7">7</button>
+          <button class="number" data-value="8">8</button>
+          <button class="number" data-value="9">9</button>
+          <button class="operator" data-op="/">/</button>
+          <button class="clear" data-action="clear">C</button>
+
+          <button class="number" data-value="4">4</button>
+          <button class="number" data-value="5">5</button>
+          <button class="number" data-value="6">6</button>
+          <button class="operator" data-op="*">*</button>
+          <button class="percent" data-action="percent">%</button>
+
+          <button class="number" data-value="1">1</button>
+          <button class="number" data-value="2">2</button>
+          <button class="number" data-value="3">3</button>
+          <button class="operator" data-op="-">-</button>
+          <button class="equals" data-action="equals">=</button>
+
+          <button class="number zero" data-value="0">0</button>
+          <button class="number" data-action="decimal">.</button>
+          <button class="operator" data-op="+">+</button>
+        </div>
+      </section>
+
+      <section class="panel tools-panel">
+        <div class="section-heading tools-heading">
+          <div class="gear" aria-hidden="true">⚙</div>
+          <div>
+            <h2>JavaScript Functions &amp; Operators</h2>
+            
+          </div>
+        </div>
+
+        <article class="tool-card even-card">
+          <h3>1. Find Even or Odd</h3>
+          <form class="tool-row" id="even-form">
+            <input id="even-input" type="number" step="1" placeholder="Enter a number" aria-label="Number to check even or odd" required />
+            <button type="submit" class="blue-btn">Check</button>
+          </form>
+          <div class="result" id="even-result" aria-live="polite">Result: -</div>
+        </article>
+
+        <article class="tool-card square-card">
+          <h3>2. Find Square</h3>
+          <form class="tool-row" id="square-form">
+            <input id="square-input" type="number" placeholder="Enter a number" aria-label="Number to square" required />
+            <button type="submit" class="green-btn">Calculate</button>
+          </form>
+          <div class="result" id="square-result" aria-live="polite">Result: -</div>
+        </article>
+
+        <article class="tool-card max-card">
+          <h3>3. Find Maximum of Two Numbers</h3>
+          <form class="tool-row max-row" id="max-form">
+            <input id="max-input-one" type="number" placeholder="Number 1" aria-label="First number" required />
+            <input id="max-input-two" type="number" placeholder="Number 2" aria-label="Second number" required />
+            <button type="submit" class="purple-btn">Find Max</button>
+          </form>
+          <div class="result" id="max-result" aria-live="polite">Result: -</div>
+        </article>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
